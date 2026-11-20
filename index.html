@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>담양 옥빈관 | 떡갈비 · 대통밥 남도 한정식 — 죽녹원 관방제림 앞</title>
+<meta name="description" content="담양 죽녹원·관방제림 앞, 떡갈비와 대통밥으로 차려내는 남도 한정식 전문점 옥빈관. 한우·한돈 떡갈비 정식, 대통밥, 보리굴비, 우렁죽순초무침. 영업시간 10:30~20:30, 주차 무료.">
+<meta name="keywords" content="담양 맛집, 옥빈관, 담양 떡갈비, 대통밥, 죽녹원 맛집, 관방제림, 담양 한정식, 국수거리">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="담양 옥빈관 | 떡갈비 · 대통밥 남도 한정식">
+<meta property="og:description" content="죽녹원에서 향교다리 건너 도보 2~3분. 담양이 고향인 오너셰프가 차려내는 떡갈비와 대통밥 한 상.">
+<meta property="og:image" content="images/tteokgalbi.jpg">
+<meta property="og:locale" content="ko_KR">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%232f3d2d'/%3E%3Ctext x='32' y='44' font-family='serif' font-size='34' fill='%23f7f2e8' text-anchor='middle'%3E玉%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;500;600;700&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   담양 옥빈관 — 소개 페이지
+   팔레트: 한지 아이보리 · 먹 · 대나무 · 단청
+   ============================================================ */
+:root{
+  --ink:#1a1815;
+  --ink-soft:#2b2721;
+  --paper:#f7f2e8;
+  --paper-2:#efe6d5;
+  --paper-3:#e5d9c3;
+  --bamboo:#4d6349;
+  --bamboo-deep:#2f3d2d;
+  --clay:#9c3f2c;
+  --gold:#b3925f;
+  --line:rgba(26,24,21,.14);
+  --line-light:rgba(247,242,232,.22);
+  --serif:"Noto Serif KR","Nanum Myeongjo",Batang,"바탕",Georgia,serif;
+  --sans:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,sans-serif;
+  --max:1180px;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:86px;-webkit-text-size-adjust:100%}
+body{
+  margin:0;
+  background:var(--paper);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:400;
+  line-height:1.75;
+  letter-spacing:-.01em;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:500;line-height:1.32;letter-spacing:-.02em;margin:0}
+p{margin:0}
+ul{margin:0;padding:0;list-style:none}
+
+.wrap{width:min(100% - 44px,var(--max));margin-inline:auto}
+.eyebrow{
+  font-family:var(--sans);font-size:.72rem;font-weight:500;
+  letter-spacing:.34em;text-transform:uppercase;color:var(--bamboo);
+}
+.eyebrow.on-dark{color:rgba(247,242,232,.62)}
+.section{padding:clamp(74px,10vw,132px) 0;scroll-margin-top:70px}
+.section-head{max-width:760px;margin-bottom:clamp(38px,5vw,64px)}
+.section-head h2{
+  font-size:clamp(1.72rem,3.5vw,2.7rem);
+  margin:14px 0 18px;
+}
+.section-head p{color:rgba(26,24,21,.72);font-size:1.02rem}
+.dark{background:var(--ink);color:var(--paper)}
+.dark .section-head p{color:rgba(247,242,232,.68)}
+
+.hairline{height:1px;background:var(--line);border:0;margin:0}
+.dark .hairline{background:var(--line-light)}
+
+/* ---------- header ---------- */
+.site-header{
+  position:fixed;inset:0 0 auto 0;z-index:80;
+  display:flex;align-items:center;
+  padding:18px 0;
+  transition:background .4s ease,padding .4s ease,box-shadow .4s ease,color .4s;
+  color:var(--paper);
+}
+.site-header .wrap{display:flex;align-items:center;justify-content:space-between;gap:24px}
+.brand{display:flex;align-items:baseline;gap:12px;font-family:var(--serif)}
+.brand .mark{
+  font-size:1.55rem;letter-spacing:.06em;font-weight:600;
+}
+.brand .hanja{
+  font-size:.66rem;letter-spacing:.42em;opacity:.72;font-family:var(--sans);
+}
+.nav{display:flex;align-items:center;gap:30px}
+.nav a{
+  font-size:.86rem;letter-spacing:.06em;opacity:.86;position:relative;padding:4px 0;
+}
+.nav a::after{
+  content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:currentColor;
+  transition:width .35s ease;
+}
+.nav a:hover::after{width:100%}
+.nav .nav-tel{
+  display:inline-flex;align-items:center;gap:8px;
+  border:1px solid currentColor;border-radius:2px;
+  padding:8px 16px;font-size:.8rem;letter-spacing:.08em;opacity:1;
+}
+.nav .nav-tel:hover{background:rgba(247,242,232,.1)}
+.site-header.solid{
+  background:rgba(247,242,232,.94);
+  -webkit-backdrop-filter:blur(12px);backdrop-filter:blur(12px);
+  color:var(--ink);
+  padding:12px 0;
+  box-shadow:0 1px 0 var(--line);
+}
+.site-header.solid .nav .nav-tel:hover{background:rgba(26,24,21,.06)}
+.menu-btn{
+  display:none;background:none;border:0;color:inherit;cursor:pointer;padding:8px;
+}
+.menu-btn span{display:block;width:22px;height:1.5px;background:currentColor;margin:5px 0;transition:.3s}
+
+/* ---------- hero ---------- */
+.hero{
+  position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;
+  padding:0 0 clamp(46px,8vh,86px);
+  color:var(--paper);overflow:hidden;
+}
+.hero-media{position:absolute;inset:0;z-index:0}
+.hero-media img{
+  width:100%;height:100%;object-fit:cover;object-position:center 46%;
+  transform:scale(1.04);
+  animation:heroIn 2.6s cubic-bezier(.16,.84,.28,1) forwards;
+}
+@keyframes heroIn{to{transform:scale(1)}}
+.hero-media::after{
+  content:"";position:absolute;inset:0;
+  background:
+    linear-gradient(to top,rgba(12,11,9,.94) 0%,rgba(12,11,9,.62) 32%,rgba(12,11,9,.18) 60%,rgba(12,11,9,.5) 100%),
+    linear-gradient(to right,rgba(10,9,7,.72) 0%,rgba(10,9,7,.34) 42%,rgba(10,9,7,0) 72%);
+}
+.hero .wrap{position:relative;z-index:1;width:min(100% - 44px,var(--max))}
+.hero-copy{max-width:780px}
+.hero h1{
+  font-size:clamp(2.1rem,6.1vw,4.3rem);
+  line-height:1.22;font-weight:400;margin:20px 0 22px;
+  text-wrap:balance;
+}
+.hero h1 em{font-style:normal;color:#e8cf9f}
+.hero .lede{
+  font-size:clamp(.98rem,1.5vw,1.1rem);color:rgba(247,242,232,.86);
+  max-width:560px;line-height:1.85;
+}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--sans);font-size:.88rem;letter-spacing:.06em;
+  padding:15px 26px;border-radius:2px;border:1px solid transparent;
+  transition:transform .3s ease,background .3s ease,color .3s ease,border-color .3s;
+  cursor:pointer;
+}
+.btn:hover{transform:translateY(-2px)}
+.btn-primary{background:var(--paper);color:var(--ink);border-color:var(--paper)}
+.btn-primary:hover{background:#fff}
+.btn-ghost{border-color:rgba(247,242,232,.5);color:var(--paper)}
+.btn-ghost:hover{background:rgba(247,242,232,.14);border-color:var(--paper)}
+.btn-dark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.btn-dark:hover{background:#000}
+.btn-outline{border-color:var(--line);color:var(--ink)}
+.btn-outline:hover{background:rgba(26,24,21,.06)}
+
+.hero-facts{
+  display:flex;flex-wrap:wrap;gap:10px 30px;
+  margin-top:clamp(34px,5vh,54px);padding-top:22px;
+  border-top:1px solid rgba(247,242,232,.24);
+  font-size:.83rem;letter-spacing:.04em;color:rgba(247,242,232,.82);
+}
+.hero-facts span{display:inline-flex;align-items:center;gap:9px}
+.hero-facts i{
+  width:4px;height:4px;border-radius:50%;background:var(--gold);display:inline-block;
+}
+
+.scroll-hint{
+  position:absolute;right:max(22px,calc((100vw - var(--max))/2));bottom:clamp(46px,8vh,86px);
+  z-index:1;display:flex;align-items:center;gap:12px;
+  font-size:.66rem;letter-spacing:.32em;text-transform:uppercase;color:rgba(247,242,232,.6);
+  writing-mode:vertical-rl;
+}
+.scroll-hint::before{
+  content:"";width:1px;height:58px;background:linear-gradient(to bottom,transparent,rgba(247,242,232,.7));
+}
+
+/* ---------- ribbon (numbers) ---------- */
+.ribbon{background:var(--bamboo-deep);color:var(--paper)}
+.ribbon .wrap{
+  display:grid;grid-template-columns:repeat(4,1fr);
+  gap:0;
+}
+.ribbon .cell{
+  padding:30px 22px;text-align:center;border-left:1px solid rgba(247,242,232,.16);
+}
+.ribbon .cell:first-child{border-left:0}
+.ribbon b{
+  display:block;font-family:var(--serif);font-weight:500;
+  font-size:clamp(1.3rem,2.6vw,1.85rem);letter-spacing:-.01em;
+}
+.ribbon span{
+  display:block;margin-top:6px;font-size:.74rem;letter-spacing:.14em;
+  color:rgba(247,242,232,.7);
+}
+
+/* ---------- story ---------- */
+.story-grid{
+  display:grid;grid-template-columns:1.02fr .98fr;gap:clamp(32px,5vw,74px);align-items:center;
+}
+.story-figure{position:relative}
+.story-figure img{
+  width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:1px;
+}
+.story-figure figcaption{
+  position:absolute;left:-1px;bottom:-1px;background:var(--paper);
+  padding:12px 18px;font-size:.72rem;letter-spacing:.1em;color:rgba(26,24,21,.6);
+  border-top:1px solid var(--line);border-right:1px solid var(--line);
+}
+.story-copy p + p{margin-top:18px}
+.story-copy .big{
+  font-family:var(--serif);font-size:clamp(1.24rem,2.3vw,1.62rem);
+  line-height:1.72;color:var(--ink);margin-bottom:26px;text-wrap:balance;
+}
+.story-copy .big strong{font-weight:600;background:linear-gradient(transparent 68%,rgba(179,146,95,.34) 68%)}
+.story-copy p{color:rgba(26,24,21,.74);font-size:.98rem}
+.sign-name{
+  margin-top:34px;display:flex;align-items:center;gap:14px;
+  font-family:var(--serif);font-size:.92rem;color:rgba(26,24,21,.72);
+}
+.sign-name::before{content:"";width:34px;height:1px;background:var(--gold)}
+
+/* pillars */
+.pillars{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:1px;
+  margin-top:clamp(50px,7vw,86px);background:var(--line);
+  border-top:1px solid var(--line);border-bottom:1px solid var(--line);
+}
+.pillar{background:var(--paper);padding:clamp(26px,3.4vw,42px)}
+.pillar .num{
+  font-family:var(--serif);font-size:.78rem;letter-spacing:.24em;color:var(--gold);
+}
+.pillar h3{font-size:1.16rem;margin:14px 0 12px}
+.pillar p{font-size:.92rem;color:rgba(26,24,21,.7);line-height:1.82}
+
+/* ---------- how to eat ---------- */
+.how{background:var(--paper-2)}
+.how-grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,5vw,68px);align-items:center;
+}
+.how-list{counter-reset:how}
+.how-item{
+  display:grid;grid-template-columns:auto 1fr;gap:20px;
+  padding:24px 0;border-top:1px solid var(--line);
+}
+.how-item:last-child{border-bottom:1px solid var(--line)}
+.how-item .idx{
+  font-family:var(--serif);font-size:1.05rem;color:var(--clay);
+  width:34px;height:34px;border:1px solid rgba(156,63,44,.35);border-radius:50%;
+  display:grid;place-items:center;line-height:1;
+}
+.how-item h3{font-size:1.04rem;margin-bottom:6px}
+.how-item p{font-size:.9rem;color:rgba(26,24,21,.7)}
+.how-figure img{width:100%;aspect-ratio:1/1;object-fit:cover}
+.how-figure figcaption{
+  margin-top:12px;font-size:.74rem;letter-spacing:.08em;color:rgba(26,24,21,.55);
+}
+
+/* ---------- signature ---------- */
+.sig-grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,2.6vw,34px);
+}
+.sig-card{
+  background:#fff;border:1px solid var(--line);border-radius:1px;
+  overflow:hidden;display:flex;flex-direction:column;
+  transition:transform .45s cubic-bezier(.2,.7,.3,1),box-shadow .45s ease;
+}
+.sig-card:hover{transform:translateY(-6px);box-shadow:0 26px 48px -30px rgba(26,24,21,.55)}
+.sig-card .thumb{overflow:hidden;aspect-ratio:4/3}
+.sig-card .thumb img{
+  width:100%;height:100%;object-fit:cover;transition:transform 1.1s cubic-bezier(.2,.7,.3,1);
+}
+.sig-card:hover .thumb img{transform:scale(1.06)}
+.sig-card .body{padding:24px 24px 28px;display:flex;flex-direction:column;gap:10px;flex:1}
+.sig-card .tag{
+  font-size:.66rem;letter-spacing:.24em;color:var(--bamboo);text-transform:uppercase;
+}
+.sig-card h3{font-size:1.24rem}
+.sig-card p{font-size:.9rem;color:rgba(26,24,21,.68);flex:1}
+.sig-card .price{
+  font-family:var(--serif);font-size:1.06rem;color:var(--ink);padding-top:12px;
+  border-top:1px solid var(--line);
+}
+.sig-card .price em{font-style:normal;font-size:.74rem;color:rgba(26,24,21,.55);margin-left:8px;font-family:var(--sans)}
+.sig-wide{
+  grid-column:span 3;display:grid;grid-template-columns:1.1fr 1fr;
+  background:var(--bamboo-deep);color:var(--paper);border:0;
+}
+.sig-wide .thumb{aspect-ratio:auto;height:100%}
+.sig-wide .body{padding:clamp(26px,3.4vw,44px);gap:12px}
+.sig-wide .tag{color:#d9c191}
+.sig-wide h3{font-size:1.4rem;color:var(--paper)}
+.sig-wide p{color:rgba(247,242,232,.76)}
+.sig-wide .price{border-top-color:rgba(247,242,232,.24);color:var(--paper)}
+.sig-wide .price em{color:rgba(247,242,232,.6)}
+
+/* ---------- menu (dark) ---------- */
+.menu-note{
+  font-size:.8rem;color:rgba(247,242,232,.55);max-width:640px;margin-top:18px;line-height:1.8;
+}
+.menu-cols{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,70px);
+}
+.menu-block + .menu-block{margin-top:44px}
+.menu-block h3{
+  display:flex;align-items:baseline;justify-content:space-between;
+  font-size:.98rem;letter-spacing:.18em;color:#d9c191;font-family:var(--sans);
+  padding-bottom:14px;border-bottom:1px solid rgba(247,242,232,.24);font-weight:500;
+}
+.menu-block h3 span{font-size:.7rem;letter-spacing:.14em;color:rgba(247,242,232,.45)}
+.menu-item{
+  display:grid;grid-template-columns:1fr auto;gap:16px;align-items:baseline;
+  padding:18px 0;border-bottom:1px solid rgba(247,242,232,.12);
+}
+.menu-item .name{font-family:var(--serif);font-size:1.04rem}
+.menu-item .desc{
+  grid-column:1/-1;font-size:.82rem;color:rgba(247,242,232,.56);
+  margin-top:-6px;line-height:1.7;
+}
+.menu-item .won{
+  font-family:var(--serif);font-size:1rem;white-space:nowrap;color:var(--paper);
+}
+.menu-item .won small{font-family:var(--sans);font-size:.7rem;color:rgba(247,242,232,.5);margin-left:6px}
+.menu-photo{position:relative}
+.menu-photo img{width:100%;aspect-ratio:4/3;object-fit:cover;opacity:.94}
+.menu-photo figcaption{
+  margin-top:12px;font-size:.74rem;letter-spacing:.06em;color:rgba(247,242,232,.52);
+}
+.menu-foot{
+  margin-top:46px;display:flex;flex-wrap:wrap;gap:14px;
+}
+
+/* ---------- space ---------- */
+.space-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(30px,5vw,70px);align-items:start}
+.space-gallery{
+  display:grid;grid-template-columns:1fr 1fr;gap:12px;
+}
+.space-gallery img{width:100%;height:100%;object-fit:cover;aspect-ratio:1/1}
+.space-gallery .wide{grid-column:span 2;aspect-ratio:16/10}
+.space-copy p{color:rgba(26,24,21,.74);font-size:.98rem}
+.space-copy p + p{margin-top:16px}
+.facility{
+  display:grid;grid-template-columns:1fr 1fr;gap:0 26px;
+  margin-top:30px;border-top:1px solid var(--line);
+}
+.facility li{
+  display:flex;gap:10px;align-items:flex-start;
+  padding:13px 0;border-bottom:1px solid var(--line);
+  font-size:.88rem;color:rgba(26,24,21,.8);
+}
+.facility li b{font-weight:500;color:var(--ink);min-width:62px;flex:none;font-size:.82rem;letter-spacing:.02em}
+.facility .dot{width:4px;height:4px;border-radius:50%;background:var(--bamboo);margin-top:11px;flex:none}
+.space-quote{
+  margin-top:34px;padding:24px 26px;background:var(--paper-2);
+  border-left:2px solid var(--gold);font-family:var(--serif);
+  font-size:1rem;line-height:1.8;color:var(--ink);
+}
+.space-quote cite{
+  display:block;margin-top:12px;font-style:normal;font-family:var(--sans);
+  font-size:.76rem;letter-spacing:.06em;color:rgba(26,24,21,.55);
+}
+
+/* ---------- reviews ---------- */
+.reviews{background:var(--paper-2)}
+.rev-top{
+  display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,70px);
+  align-items:end;margin-bottom:clamp(38px,5vw,60px);
+}
+.score{
+  display:flex;align-items:flex-end;gap:18px;flex-wrap:wrap;
+}
+.score .num{
+  font-family:var(--serif);font-size:clamp(3rem,6vw,4.4rem);line-height:.9;letter-spacing:-.03em;
+}
+.score .meta{font-size:.82rem;color:rgba(26,24,21,.62);line-height:1.7}
+.score .stars{color:var(--clay);letter-spacing:.16em;font-size:.95rem}
+.score-sub{display:flex;gap:26px;margin-top:18px;flex-wrap:wrap}
+.score-sub div{font-size:.78rem;color:rgba(26,24,21,.6)}
+.score-sub b{display:block;font-family:var(--serif);font-size:1.05rem;color:var(--ink);font-weight:500}
+
+.kw-list{display:grid;gap:12px}
+.kw{display:grid;grid-template-columns:104px 1fr auto;gap:14px;align-items:center;font-size:.82rem}
+.kw .bar{height:5px;background:rgba(26,24,21,.1);position:relative;border-radius:99px;overflow:hidden}
+.kw .bar i{
+  position:absolute;inset:0 auto 0 0;background:var(--bamboo);border-radius:99px;
+  width:0;transition:width 1.4s cubic-bezier(.2,.7,.3,1);
+}
+.kw .cnt{color:rgba(26,24,21,.5);font-size:.74rem;font-variant-numeric:tabular-nums}
+
+.quotes{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(14px,2vw,22px);
+}
+.quote{
+  background:var(--paper);border:1px solid var(--line);padding:clamp(24px,2.8vw,32px);
+  display:flex;flex-direction:column;gap:14px;
+}
+.quote .marks{font-family:var(--serif);font-size:2rem;line-height:.6;color:var(--gold)}
+.quote p{font-size:.93rem;line-height:1.86;color:rgba(26,24,21,.86);flex:1}
+.quote .who{
+  display:flex;align-items:center;justify-content:space-between;
+  font-size:.74rem;color:rgba(26,24,21,.55);border-top:1px solid var(--line);padding-top:12px;
+}
+.quote .who b{font-weight:500;color:var(--ink);font-size:.8rem}
+.quote.big{grid-column:span 3;background:var(--paper)}
+.quote.big p{font-family:var(--serif);font-size:clamp(1.06rem,1.9vw,1.32rem);line-height:1.8}
+
+.press{
+  margin-top:clamp(38px,5vw,58px);padding-top:30px;border-top:1px solid var(--line);
+  display:grid;grid-template-columns:repeat(3,1fr);gap:24px;
+}
+.press div{font-size:.86rem;color:rgba(26,24,21,.72)}
+.press b{display:block;font-family:var(--sans);font-size:.7rem;letter-spacing:.24em;color:var(--bamboo);margin-bottom:8px}
+
+/* ---------- visit ---------- */
+.visit-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(34px,5vw,70px)}
+.info-block + .info-block{margin-top:30px;padding-top:28px;border-top:1px solid var(--line)}
+.info-block h3{
+  font-size:.78rem;letter-spacing:.26em;font-family:var(--sans);font-weight:500;
+  color:var(--bamboo);margin-bottom:14px;
+}
+.info-big{font-family:var(--serif);font-size:clamp(1.2rem,2.2vw,1.5rem);line-height:1.62}
+.info-sub{font-size:.88rem;color:rgba(26,24,21,.66);margin-top:8px}
+.tel-row{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.tel-row .btn{padding:12px 20px;font-size:.84rem}
+.hours{display:grid;gap:8px;font-size:.9rem}
+.hours div{display:flex;justify-content:space-between;gap:20px;border-bottom:1px dashed var(--line);padding-bottom:8px}
+.hours span:last-child{color:rgba(26,24,21,.66);font-variant-numeric:tabular-nums}
+.map-frame{
+  position:relative;border:1px solid var(--line);background:#ddd;overflow:hidden;
+}
+.map-frame iframe{display:block;width:100%;height:clamp(300px,42vw,460px);border:0}
+.map-links{display:flex;flex-wrap:wrap;gap:10px;margin-top:16px}
+.map-links a{
+  flex:1 1 30%;text-align:center;padding:13px 10px;font-size:.82rem;
+  border:1px solid var(--line);transition:.3s;background:#fff;
+}
+.map-links a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.way{font-size:.9rem;color:rgba(26,24,21,.72);line-height:1.9}
+.way li{padding-left:16px;position:relative}
+.way li::before{content:"";position:absolute;left:0;top:.75em;width:5px;height:1px;background:var(--gold)}
+
+/* ---------- closing ---------- */
+.closing{
+  position:relative;color:var(--paper);text-align:center;
+  padding:clamp(90px,13vw,160px) 0;overflow:hidden;
+}
+.closing img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.closing::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(to bottom,rgba(12,11,9,.72),rgba(12,11,9,.86));
+}
+.closing .wrap{position:relative;z-index:2}
+.closing h2{font-size:clamp(1.7rem,4.4vw,3rem);line-height:1.44;margin-bottom:20px;text-wrap:balance}
+.closing p{color:rgba(247,242,232,.78);font-size:.98rem;max-width:560px;margin:0 auto}
+.closing .hero-actions{justify-content:center}
+
+/* ---------- footer ---------- */
+.site-footer{background:var(--ink);color:rgba(247,242,232,.66);padding:54px 0 62px;font-size:.8rem}
+.foot-grid{display:grid;grid-template-columns:1.2fr 1fr 1fr;gap:34px}
+.site-footer .brand{color:var(--paper);margin-bottom:14px}
+.site-footer p{line-height:1.9}
+.site-footer a:hover{color:var(--paper)}
+.foot-title{
+  font-size:.68rem;letter-spacing:.26em;color:rgba(247,242,232,.42);
+  margin-bottom:12px;font-family:var(--sans);
+}
+.foot-legal{
+  margin-top:40px;padding-top:22px;border-top:1px solid rgba(247,242,232,.14);
+  display:flex;flex-wrap:wrap;gap:8px 24px;justify-content:space-between;
+  font-size:.72rem;color:rgba(247,242,232,.42);line-height:1.8;
+}
+
+/* ---------- mobile call bar ---------- */
+.callbar{display:none}
+
+/* ---------- reveal ---------- */
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .9s cubic-bezier(.2,.7,.3,1),transform .9s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- responsive ---------- */
+@media (max-width:980px){
+  .story-grid,.how-grid,.space-grid,.visit-grid,.rev-top{grid-template-columns:1fr;gap:34px}
+  .sig-grid{grid-template-columns:1fr 1fr}
+  .sig-wide{grid-column:span 2;grid-template-columns:1fr}
+  .sig-wide .thumb{aspect-ratio:16/9}
+  .quotes{grid-template-columns:1fr 1fr}
+  .quote.big{grid-column:span 2}
+  .menu-cols{grid-template-columns:1fr}
+  .ribbon .wrap{grid-template-columns:1fr 1fr}
+  .ribbon .cell:nth-child(3){border-left:0}
+  .ribbon .cell:nth-child(n+3){border-top:1px solid rgba(247,242,232,.16)}
+  .pillars{grid-template-columns:1fr}
+  .pillar + .pillar{border-top:1px solid var(--line)}
+  .press{grid-template-columns:1fr;gap:16px}
+  .scroll-hint{display:none}
+  .story-figure img{aspect-ratio:4/3}
+}
+@media (max-width:760px){
+  .nav{position:fixed;inset:0;background:rgba(14,13,11,.97);color:var(--paper);
+    flex-direction:column;justify-content:center;gap:28px;
+    opacity:0;pointer-events:none;transition:opacity .35s ease;z-index:90}
+  .nav.open{opacity:1;pointer-events:auto}
+  .nav a{font-size:1.1rem;letter-spacing:.1em}
+  .nav .nav-tel{border-color:rgba(247,242,232,.4)}
+  .menu-btn{display:block;position:relative;z-index:95}
+  body.nav-open .menu-btn span:nth-child(1){transform:translateY(6.5px) rotate(45deg)}
+  body.nav-open .menu-btn span:nth-child(2){opacity:0}
+  body.nav-open .menu-btn span:nth-child(3){transform:translateY(-6.5px) rotate(-45deg)}
+  .site-header, .site-header.solid{color:var(--paper);background:transparent;box-shadow:none;padding:14px 0}
+  .site-header.solid{background:rgba(20,18,15,.9);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px)}
+  .hero{min-height:92svh}
+  .hero h1{font-size:clamp(1.9rem,8.4vw,2.6rem)}
+  .hero-actions{flex-direction:column;align-items:stretch}
+  .hero-actions .btn{flex:1 1 auto;width:100%;padding:15px 14px;white-space:nowrap}
+  .sig-grid{grid-template-columns:1fr}
+  .sig-wide{grid-column:span 1}
+  .quotes{grid-template-columns:1fr}
+  .quote.big{grid-column:span 1}
+  .facility{grid-template-columns:1fr}
+  .space-gallery img{aspect-ratio:4/3}
+  .space-gallery .wide{aspect-ratio:16/10}
+  .kw{grid-template-columns:92px 1fr auto}
+  .foot-grid{grid-template-columns:1fr;gap:26px}
+  .hero-facts{gap:8px 18px;font-size:.78rem}
+  .callbar{
+    display:grid;grid-template-columns:1fr 1fr;position:fixed;left:0;right:0;bottom:0;z-index:70;
+    background:rgba(20,18,15,.96);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);
+    border-top:1px solid rgba(247,242,232,.16);
+  }
+  .callbar a{
+    padding:15px 8px;text-align:center;color:var(--paper);font-size:.86rem;letter-spacing:.06em;
+  }
+  .callbar a + a{border-left:1px solid rgba(247,242,232,.16)}
+  .callbar a b{font-weight:500}
+  .site-footer{padding-bottom:88px}
+}
+@media (prefers-reduced-motion:reduce){
+  *{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+  html{scroll-behavior:auto}
+}
+@media print{
+  .site-header,.callbar,.scroll-hint,.hero-actions{display:none!important}
+  .hero{min-height:auto;padding:60px 0 40px}
+  .reveal{opacity:1!important;transform:none!important}
+  .section{padding:34px 0}
+  .sig-card,.quote,.pillar{break-inside:avoid}
+  .pillars{background:#fff}
+  body{background:#fff}
+}
+</style>
+<noscript><style>.reveal{opacity:1!important;transform:none!important}.kw .bar i{width:60%}</style></noscript>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "옥빈관",
+  "alternateName": "담양 옥빈관 떡갈비전문점",
+  "description": "담양 죽녹원·관방제림 앞, 떡갈비와 대통밥으로 차려내는 남도 한정식 전문점",
+  "servesCuisine": ["한식", "한정식", "떡갈비", "대통밥"],
+  "priceRange": "₩₩",
+  "telephone": "+82-61-382-2584",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "죽녹원로 97",
+    "addressLocality": "담양읍, 담양군",
+    "addressRegion": "전남광주통합특별시",
+    "postalCode": "57340",
+    "addressCountry": "KR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 35.3235295, "longitude": 126.9851076 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+    "opens": "10:30",
+    "closes": "20:30"
+  }],
+  "acceptsReservations": "True",
+  "sameAs": [
+    "https://map.naver.com/p/entry/place/13145594",
+    "http://place.map.kakao.com/8486851"
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="담양 옥빈관 홈">
+      <span class="mark">옥빈관</span>
+      <span class="hanja">玉賓館 · DAMYANG</span>
+    </a>
+    <nav class="nav" id="nav">
+      <a href="#story">옥빈관 이야기</a>
+      <a href="#signature">대표 음식</a>
+      <a href="#menu">메뉴</a>
+      <a href="#space">공간·단체</a>
+      <a href="#reviews">고객의 말</a>
+      <a href="#visit">오시는 길</a>
+      <a class="nav-tel" href="tel:0613822584">061-382-2584</a>
+    </nav>
+    <button class="menu-btn" id="menuBtn" aria-label="메뉴 열기" aria-expanded="false" aria-controls="nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="hero-media">
+      <img src="images/tteokgalbi.jpg" alt="옥빈관 한우 떡갈비 — 숯불 향을 입힌 두툼한 떡갈비" fetchpriority="high" width="1600" height="1600">
+    </div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <p class="eyebrow on-dark">담양 죽녹원 · 관방제림 앞</p>
+        <h1>대나무 향 가득한 한 상,<br><em>담양의 정성</em>을 담아</h1>
+        <p class="lede">떡갈비와 대통밥으로 차려내는 남도 한정식. 담양이 고향인 오너셰프가 지역의 재료와 정성으로 한 상을 차립니다.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="tel:0613822584">전화 예약 061-382-2584</a>
+          <a class="btn btn-ghost" href="https://map.naver.com/p/entry/place/13145594?placePath=%2Fbooking" target="_blank" rel="noopener">네이버 예약</a>
+        </div>
+        <div class="hero-facts">
+          <span><i></i>매일 10:30 – 20:30 (라스트오더 20:00)</span>
+          <span><i></i>죽녹원 도보 2~3분</span>
+          <span><i></i>주차 무료 · 단체석</span>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-hint" aria-hidden="true">Scroll</div>
+  </section>
+
+  <!-- ============ RIBBON ============ -->
+  <section class="ribbon" aria-label="옥빈관 주요 정보">
+    <div class="wrap">
+      <div class="cell"><b>4.77</b><span>네이버 평점</span></div>
+      <div class="cell"><b>4,200+</b><span>방문자 리뷰</span></div>
+      <div class="cell"><b>10~70인</b><span>단체 예약</span></div>
+      <div class="cell"><b>2023</b><span>모범음식점 지정</span></div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="section" id="story">
+    <div class="wrap">
+      <div class="story-grid">
+        <figure class="story-figure reveal">
+          <img src="images/exterior-day.jpg" alt="옥빈관 매장 입구 — 담양 죽녹원로 큰길가, 붉은 차양과 테라스" loading="lazy" width="1600" height="1600">
+          <figcaption>담양읍 죽녹원로 97 · 관방제림 입구 맞은편</figcaption>
+        </figure>
+        <div class="story-copy reveal">
+          <p class="eyebrow">Our Story</p>
+          <p class="big">죽녹원에서 향교다리를 건너 <strong>2~3분</strong>.<br>관방제림 입구 맞은편, 대숲의 길목에 옥빈관이 있습니다.</p>
+          <p>옥빈관은 담양이 고향인 오너셰프가 담양의 전통 음식인 떡갈비와 대통밥을 제대로 선보이겠다는 마음으로 만든 남도 한정식 전문점입니다. 죽녹원 앞 같은 자리에서 20년 가까이 한 상을 차려 왔습니다. 담양을 찾는 여행자에게 이곳에서만 경험할 수 있는 한 끼를 전하고자, 지역의 식재료와 정성을 담아 음식을 준비합니다.</p>
+          <p>담양 사람들도, 담양을 다녀가는 이들도 같은 자리에서 같은 한 상을 받습니다. 관광의 들뜸과 일상의 반찬이 한 상에 함께 놓이는 곳, 그래서 옥빈관은 <strong>여행지의 맛집이자 동네의 밥집</strong>입니다.</p>
+          <p class="sign-name">담양 옥빈관 오너셰프</p>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <article class="pillar reveal">
+          <p class="num">01</p>
+          <h3>정성껏 다진 떡갈비</h3>
+          <p>고기를 정성스럽게 다져 부드러운 식감과 깊은 풍미를 살렸습니다. 담백하면서도 고기의 감칠맛이 오래 남는 담양식 떡갈비, 한우와 한돈 가운데 골라 드실 수 있습니다.</p>
+        </article>
+        <article class="pillar reveal">
+          <p class="num">02</p>
+          <h3>대나무 통에 지은 대통밥</h3>
+          <p>대나무 통에 밥을 넣어 압력솥에서 약 한 시간 증탕합니다. 은은한 대나무 향이 배어 담백하고 건강한 맛을 냅니다. 식사 후 대나무 통은 집에 가져가실 수 있습니다.</p>
+        </article>
+        <article class="pillar reveal">
+          <p class="num">03</p>
+          <h3>리필되는 남도 상차림</h3>
+          <p>양념게장, 간장새우장, 죽순나물, 오가피순나물, 가지탕수, 잡채, 직접 담근 배추김치까지 — 열 가지가 넘는 반찬과 국이 정식에 함께 오르고, 모자라면 다시 채워 드립니다.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ HOW TO EAT ============ -->
+  <section class="section how" id="how">
+    <div class="wrap">
+      <div class="how-grid">
+        <div class="reveal">
+          <p class="eyebrow">How to Enjoy</p>
+          <h2 style="font-size:clamp(1.66rem,3.2vw,2.4rem);margin:14px 0 26px">옥빈관의 떡갈비,<br>이렇게 드시면 더 맛있습니다</h2>
+          <div class="how-list">
+            <div class="how-item">
+              <span class="idx">1</span>
+              <div>
+                <h3>감자채와 검정깨 특제소스</h3>
+                <p>고소한 검정깨 소스에 아삭한 감자채를 버무려 떡갈비와 함께. 느끼함을 잡아주고 식감을 살려 줍니다.</p>
+              </div>
+            </div>
+            <div class="how-item">
+              <span class="idx">2</span>
+              <div>
+                <h3>상추·부추 샐러드에 겨자소스</h3>
+                <p>상추와 양파, 부추 샐러드에 겨자소스를 곁들여 떡갈비를 싸 먹으면 뒷맛이 깔끔합니다.</p>
+              </div>
+            </div>
+            <div class="how-item">
+              <span class="idx">3</span>
+              <div>
+                <h3>양념게장과 함께, 대통밥엔 새우장 간장</h3>
+                <p>양념게장의 살과 양념을 떡갈비에 얹어 남도식으로. 대통밥에는 간장새우장 국물을 살짝 얹어 드셔 보세요.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figure class="how-figure reveal">
+          <img src="images/garnish.jpg" alt="옥빈관 밑반찬 가지튀김" loading="lazy" width="1600" height="1600">
+          <figcaption>상차림의 한 접시 — 가지튀김. 계절에 따라 반찬이 달라집니다.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE ============ -->
+  <section class="section" id="signature">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Signature</p>
+        <h2>대표 음식</h2>
+        <p>한우와 한돈 가운데 고르고, 공기밥과 대통밥 가운데 고르면 한 상이 완성됩니다. 정식에는 리필 가능한 상차림이 포함되어 있습니다.</p>
+      </div>
+      <div class="sig-grid">
+        <article class="sig-card reveal">
+          <div class="thumb"><img src="images/tteokgalbi.jpg" alt="한우 떡갈비" loading="lazy" width="1600" height="1600"></div>
+          <div class="body">
+            <p class="tag">한우</p>
+            <h3>한우 떡갈비 정식</h3>
+            <p>부드럽고 고소한 한우 떡갈비에 전통의 맛을 담은 상차림. 공기밥으로 차려집니다.</p>
+            <p class="price">28,000원<em>1인 / 220g</em></p>
+          </div>
+        </article>
+        <article class="sig-card reveal">
+          <div class="thumb"><img src="images/daetongbap.jpg" alt="대나무 통에 담긴 대통밥" loading="lazy" width="1200" height="1600"></div>
+          <div class="body">
+            <p class="tag">대통밥</p>
+            <h3>한우 대통밥 정식</h3>
+            <p>최고급 한우 떡갈비와 대나무 향을 머금은 대통밥, 풍성한 한식 상차림을 한 번에.</p>
+            <p class="price">33,000원<em>1인 / 220g</em></p>
+          </div>
+        </article>
+        <article class="sig-card reveal">
+          <div class="thumb"><img src="images/saeujang.jpg" alt="옥빈관 간장 새우장" loading="lazy" width="1600" height="1200"></div>
+          <div class="body">
+            <p class="tag">한우 + 한돈</p>
+            <h3>반반대통정식</h3>
+            <p>한우와 한돈 떡갈비를 하나씩, 대통밥과 리필되는 밑반찬까지. 두 가지 맛을 한 상에서 비교하며 드실 수 있습니다.</p>
+            <p class="price">29,000원<em>1인</em></p>
+          </div>
+        </article>
+        <article class="sig-wide reveal">
+          <div class="thumb"><img src="images/table-spread.jpg" alt="옥빈관 한 상 차림 전체" loading="lazy" width="960" height="621"></div>
+          <div class="body">
+            <p class="tag">Season's Table</p>
+            <h3>참 보리굴비 정식과 우렁죽순초무침</h3>
+            <p>정성스럽게 말린 참 보리굴비를 대통밥과 함께. 담양의 죽순에 우렁을 더해 특제소스로 버무린 우렁죽순초무침은 떡갈비와 곁들이기 좋은 별미입니다.</p>
+            <p class="price">보리굴비 정식 28,000원 · 우렁죽순초무침 15,000원<em>보리굴비는 2인 이상 주문</em></p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ MENU ============ -->
+  <section class="section dark" id="menu">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow on-dark">Menu</p>
+        <h2>메뉴</h2>
+        <p>정식은 1인 1메뉴 주문이며, 상차림은 리필됩니다. 아래 가격은 2026년 11월 기준이며 매장 사정에 따라 달라질 수 있습니다.</p>
+      </div>
+
+      <div class="menu-cols">
+        <div class="reveal">
+          <div class="menu-block">
+            <h3>대통밥 정식 <span>대나무 통밥 포함</span></h3>
+            <div class="menu-item">
+              <span class="name">한우 대통밥 정식</span><span class="won">33,000<small>원</small></span>
+              <span class="desc">한우 떡갈비 220g + 대통밥 + 상차림</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">반반대통정식</span><span class="won">29,000<small>원</small></span>
+              <span class="desc">한우·한돈 떡갈비 각 1개 + 대통밥 + 상차림</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">한돈 떡갈비 대통정식</span><span class="won">25,000<small>원</small></span>
+              <span class="desc">쫀득한 식감의 한돈 떡갈비 220g + 대통밥</span>
+            </div>
+          </div>
+
+          <div class="menu-block">
+            <h3>일반 정식 <span>공기밥</span></h3>
+            <div class="menu-item">
+              <span class="name">한우 떡갈비 정식</span><span class="won">28,000<small>원</small></span>
+              <span class="desc">한우 떡갈비 220g + 공기밥 + 상차림</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">한돈 떡갈비 정식</span><span class="won">20,000<small>원</small></span>
+              <span class="desc">한돈 떡갈비 220g + 공기밥 + 상차림</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">반반정식</span><span class="won">24,000<small>원</small></span>
+              <span class="desc">한우·한돈 떡갈비를 함께, 공기밥</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">보리굴비 정식</span><span class="won">28,000<small>원</small></span>
+              <span class="desc">참 보리굴비 + 밥 + 상차림 · 2인 이상 주문</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="menu-block">
+            <h3>단품 · 추가 <span>220g 기준</span></h3>
+            <div class="menu-item">
+              <span class="name">한우 떡갈비 추가</span><span class="won">20,000<small>원</small></span>
+            </div>
+            <div class="menu-item">
+              <span class="name">한돈 떡갈비 추가</span><span class="won">13,000<small>원</small></span>
+            </div>
+            <div class="menu-item">
+              <span class="name">보리굴비 추가</span><span class="won">18,000<small>원</small></span>
+            </div>
+            <div class="menu-item">
+              <span class="name">우렁죽순초무침 <span style="font-size:.78rem;color:rgba(247,242,232,.5)">별미</span></span><span class="won">15,000<small>원</small></span>
+              <span class="desc">담양의 죽순을 우렁과 특제소스로 버무린 별미</span>
+            </div>
+          </div>
+
+          <div class="menu-block">
+            <h3>포장 <span>전화 주문</span></h3>
+            <div class="menu-item">
+              <span class="name">한우 떡갈비</span><span class="won">20,000<small>원</small></span>
+              <span class="desc">한우 2쪽</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">반반 떡갈비</span><span class="won">16,000<small>원</small></span>
+              <span class="desc">한우 1쪽 · 한돈 1쪽</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">한돈 떡갈비</span><span class="won">13,000<small>원</small></span>
+              <span class="desc">한돈 2쪽</span>
+            </div>
+            <div class="menu-item">
+              <span class="name">새우장</span><span class="won">18,000<small>원</small></span>
+              <span class="desc">타이거새우로 만든 간장 새우장</span>
+            </div>
+          </div>
+
+          <figure class="menu-photo">
+            <img src="images/menu-board.jpg" alt="옥빈관 매장 메뉴판" loading="lazy" width="1600" height="1200">
+            <figcaption>매장 입구의 메뉴판 · 예약전화 061-382-2584</figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="menu-foot reveal">
+        <a class="btn btn-primary" href="tel:0613822584">전화로 예약·포장 주문</a>
+        <a class="btn btn-ghost" href="https://map.naver.com/p/entry/place/13145594?placePath=%2Fbooking" target="_blank" rel="noopener">네이버 예약</a>
+      </div>
+      <p class="menu-note">· 정식에는 리필 가능한 상차림이 포함된 금액입니다. 1인 1메뉴 주문을 부탁드립니다.<br>· 결제: 지역화폐(지류·카드·모바일형), 제로페이<br>· 외부 주류 반입(콜키지)은 불가합니다.</p>
+    </div>
+  </section>
+
+  <!-- ============ SPACE ============ -->
+  <section class="section" id="space">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Space &amp; Group</p>
+        <h2>넓은 홀과 독립된 룸</h2>
+        <p>가족 모임부터 단체 여행, 회갑·상견례 자리까지. 홀은 넓고 룸은 여럿이라 인원에 맞춰 자리를 잡아 드립니다.</p>
+      </div>
+      <div class="space-grid">
+        <div class="space-gallery reveal">
+          <img class="wide" src="images/exterior-night.jpg" alt="밤의 옥빈관 외관 — 옥빈관 간판과 조명" loading="lazy" width="1600" height="1200">
+          <img src="images/table-hall.jpg" alt="옥빈관 홀 테이블 상차림" loading="lazy" width="1600" height="1200">
+          <img src="images/table-closeup.jpg" alt="옥빈관 상차림 — 떡갈비와 반찬" loading="lazy" width="1200" height="1600">
+        </div>
+        <div class="space-copy reveal">
+          <p>옥빈관은 <strong>단체 이용이 가능한</strong> 넓은 매장입니다. 홀 가운데로는 큰 상이 들어가고, 안쪽으로는 독립된 룸이 이어집니다. 룸은 여러 개로 나뉘어 있어 필요하면 합쳐서 사용할 수 있습니다.</p>
+          <p>단체 관광버스로 오시는 일도 많아, 인원이 많아도 자리 잡기가 수월합니다. 네이버 예약에서는 일반 예약(2~50인)과 단체 예약(10~70인)을 따로 받고 있습니다.</p>
+          <ul class="facility">
+            <li><span class="dot"></span><b>주차</b>매장 맞은편 담양관방제림주차장 · 담양읍 공영주차장 무료</li>
+            <li><span class="dot"></span><b>단체</b>단체석·룸 운영, 최대 70인 예약</li>
+            <li><span class="dot"></span><b>유아</b>유아 의자 구비</li>
+            <li><span class="dot"></span><b>접근</b>출입구·좌석 휠체어 이용 가능</li>
+            <li><span class="dot"></span><b>좌석</b>입식 테이블</li>
+            <li><span class="dot"></span><b>기타</b>남/녀 화장실 구분 · 무선 인터넷</li>
+            <li><span class="dot"></span><b>반려</b>반려동물 동반 불가</li>
+            <li><span class="dot"></span><b>주류</b>외부 주류 반입 불가(콜키지 없음)</li>
+          </ul>
+          <blockquote class="space-quote">
+            “매장 홀은 넓고 깔끔했으며 단체 손님을 위한 방들도 굉장히 많았다.”
+            <cite>네이버 방문자 리뷰 · 어쿠스틱나나 · 2026.03.22</cite>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ REVIEWS ============ -->
+  <section class="section reviews" id="reviews">
+    <div class="wrap">
+      <div class="rev-top">
+        <div class="reveal">
+          <p class="eyebrow">Guest Voices</p>
+          <div class="score" style="margin-top:16px">
+            <span class="num">4.77</span>
+            <span class="meta">
+              <span class="stars">★★★★★</span><br>
+              네이버 방문자 리뷰 4,200여 건<br>
+              <span style="font-size:.76rem">평점 2,076개 · 2,054명 참여</span>
+            </span>
+          </div>
+          <div class="score-sub">
+            <div><b>4.2</b>구글 지도 (256)</div>
+            <div><b>4.4</b>다이닝코드 (19)</div>
+            <div><b>6,552</b>네이버 리뷰 전체</div>
+          </div>
+        </div>
+        <div class="reveal">
+          <p class="eyebrow" style="margin-bottom:16px">이런 점이 좋았어요</p>
+          <div class="kw-list">
+            <div class="kw"><span>음식이 맛있어요</span><span class="bar"><i data-w="100"></i></span><span class="cnt">4,221</span></div>
+            <div class="kw"><span>재료가 신선해요</span><span class="bar"><i data-w="57"></i></span><span class="cnt">2,392</span></div>
+            <div class="kw"><span>친절해요</span><span class="bar"><i data-w="46"></i></span><span class="cnt">1,946</span></div>
+            <div class="kw"><span>매장이 넓어요</span><span class="bar"><i data-w="39"></i></span><span class="cnt">1,651</span></div>
+            <div class="kw"><span>메뉴 구성이 알차요</span><span class="bar"><i data-w="34"></i></span><span class="cnt">1,456</span></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="quotes">
+        <article class="quote big reveal">
+          <span class="marks">“</span>
+          <p>한우 떡갈비는 고소한 풍미가 좋고 부드럽게 즐기기 좋았어요. 보리굴비도 밥과 함께 먹으니 잘 어울리더라고요. … 담양에 방문한다면 한 번쯤 들러볼 만한 곳입니다.</p>
+          <div class="who"><b>레드보헤미안</b><span>네이버 방문자 리뷰 · 2026.11.20</span></div>
+        </article>
+        <article class="quote reveal">
+          <span class="marks">“</span>
+          <p>떡갈비 인생 떡갈비! 이렇게 두껍고 맛있는 곳은 처음이에요.</p>
+          <div class="who"><b>세세버들언니</b><span>2026.11.12</span></div>
+        </article>
+        <article class="quote reveal">
+          <span class="marks">“</span>
+          <p>고기 육즙이 좔좔 흐르는 게 장난이 아닙니다. 생감자채를 떡갈비에 곁들여 먹는 것도 너무 특이하고 맛있어요.</p>
+          <div class="who"><b>채린맘323</b><span>2026.11.08</span></div>
+        </article>
+        <article class="quote reveal">
+          <span class="marks">“</span>
+          <p>반찬도 간이 잘 맞고 정갈합니다. 부모님 모시고 오기 좋아요.</p>
+          <div class="who"><b>숙녀라면</b><span>2026.11.19</span></div>
+        </article>
+      </div>
+
+      <div class="press reveal">
+        <div><b>방송</b>2TV 생생정보 2531회 — 떡갈비·대통밥 소개 (2026.05.11)</div>
+        <div><b>인증</b>농림축산식품부 안심식당 · 담양군 모범음식점 지정 (2023.11.07)</div>
+        <div><b>위생</b>세스코 멤버스 정기 방제 (최근 통합방제 2026.10)</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VISIT ============ -->
+  <section class="section" id="visit">
+    <div class="wrap">
+      <div class="section-head reveal">
+        <p class="eyebrow">Visit</p>
+        <h2>오시는 길</h2>
+        <p>죽녹원 정문에서 향교다리를 건너 큰길로 나오면, 큰길가 두 번째 건물이 옥빈관입니다. 도보 2~3분.</p>
+      </div>
+      <div class="visit-grid">
+        <div class="reveal">
+          <div class="info-block" style="margin-top:0;padding-top:0;border-top:0">
+            <h3>주소</h3>
+            <p class="info-big">전남광주통합특별시 담양군 담양읍<br>죽녹원로 97</p>
+            <p class="info-sub">지번 객사리 173-11 · 우편번호 57340 · 관방제림 입구 맞은편</p>
+          </div>
+          <div class="info-block">
+            <h3>전화 · 예약</h3>
+            <p class="info-big">061-382-2584</p>
+            <p class="info-sub">네이버 안심번호 0507-1424-2584 · 네이버 예약 운영<br>일반 예약 2~50인 / 단체 예약 10~70인</p>
+            <div class="tel-row">
+              <a class="btn btn-dark" href="tel:0613822584">전화 걸기</a>
+              <a class="btn btn-outline" href="https://map.naver.com/p/entry/place/13145594?placePath=%2Fbooking" target="_blank" rel="noopener">네이버 예약</a>
+            </div>
+          </div>
+          <div class="info-block">
+            <h3>영업시간</h3>
+            <div class="hours">
+              <div><span>매일</span><span>10:30 – 20:30</span></div>
+              <div><span>라스트오더</span><span>20:00</span></div>
+              <div><span>브레이크타임</span><span>없음</span></div>
+              <div><span>주차</span><span>무료 (맞은편 공영주차장)</span></div>
+            </div>
+            <p class="info-sub" style="margin-top:14px">휴무와 영업시간은 매장 사정에 따라 달라질 수 있습니다. 먼 곳에서 오시는 날에는 전화로 확인해 주세요.</p>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="map-frame">
+            <iframe title="옥빈관 위치 지도" src="https://maps.google.com/maps?q=35.3235295,126.9851076&amp;z=16&amp;hl=ko&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="map-links">
+            <a href="https://map.naver.com/p/entry/place/13145594" target="_blank" rel="noopener">네이버 지도</a>
+            <a href="http://place.map.kakao.com/8486851" target="_blank" rel="noopener">카카오맵</a>
+            <a href="https://maps.google.com/?cid=15936568486486936058" target="_blank" rel="noopener">구글 지도</a>
+          </div>
+          <ul class="way" style="margin-top:26px">
+            <li>죽녹원 정문 → 향교다리 → 큰길 방향 도보 2~3분</li>
+            <li>311번 버스 이용 시 관방제림 정류소 하차, 길 건너 맞은편</li>
+            <li>메타세쿼이아 가로수길에서 관방제림 산책로를 따라 300~400년 고목 길을 걸어오셔도 좋습니다</li>
+            <li>자가용은 매장 맞은편 담양관방제림주차장, 담양읍 공영주차장을 무료로 이용하실 수 있습니다</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CLOSING ============ -->
+  <section class="closing">
+    <img src="images/exterior-night.jpg" alt="" aria-hidden="true" loading="lazy" width="1600" height="1200">
+    <div class="wrap reveal">
+      <p class="eyebrow on-dark" style="margin-bottom:16px">Damyang, Okbingwan</p>
+      <h2>대숲을 걷고, 다리를 건너<br>한 상의 담양을 만나세요</h2>
+      <p>떡갈비 한 조각에 담양의 정성을, 대통밥 한 술에 대나무 향을 담았습니다. 오늘도 같은 자리에서 기다리고 있습니다.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:0613822584">061-382-2584</a>
+        <a class="btn btn-ghost" href="#visit">오시는 길 보기</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <a class="brand" href="#top">
+          <span class="mark">옥빈관</span>
+          <span class="hanja">玉賓館 · DAMYANG</span>
+        </a>
+        <p>담양 옥빈관 떡갈비전문점<br>떡갈비 · 대통밥 남도 한정식</p>
+      </div>
+      <div>
+        <p class="foot-title">CONTACT</p>
+        <p>
+          전남광주통합특별시 담양군 담양읍 죽녹원로 97<br>
+          <a href="tel:0613822584">061-382-2584</a><br>
+          <a href="tel:050714242584">0507-1424-2584</a> (안심번호)
+        </p>
+      </div>
+      <div>
+        <p class="foot-title">HOURS</p>
+        <p>매일 10:30 – 20:30<br>라스트오더 20:00<br>브레이크타임 없음</p>
+      </div>
+    </div>
+    <div class="foot-legal">
+      <span>© 2026 담양 옥빈관. All rights reserved.</span>
+      <span>사진: 구글 지도 방문자 제공 사진 · 메뉴·가격은 2026년 11월 기준</span>
+    </div>
+  </div>
+</footer>
+
+<div class="callbar">
+  <a href="tel:0613822584"><b>전화</b> 061-382-2584</a>
+  <a href="https://map.naver.com/p/entry/place/13145594?placePath=%2Fbooking" target="_blank" rel="noopener"><b>네이버 예약</b></a>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  // header state on scroll
+  var header = document.getElementById('siteHeader');
+  var onScroll = function(){
+    if (window.scrollY > 60) header.classList.add('solid');
+    else header.classList.remove('solid');
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+
+  // mobile nav
+  var btn = document.getElementById('menuBtn');
+  var nav = document.getElementById('nav');
+  var closeNav = function(){
+    nav.classList.remove('open');
+    document.body.classList.remove('nav-open');
+    btn.setAttribute('aria-expanded','false');
+  };
+  btn.addEventListener('click', function(){
+    var open = nav.classList.toggle('open');
+    document.body.classList.toggle('nav-open', open);
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  nav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeNav); });
+
+  // scroll reveal
+  var items = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          e.target.classList.add('in');
+          io.unobserve(e.target);
+        }
+      });
+    }, {rootMargin:'0px 0px -8% 0px', threshold:0.12});
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add('in'); });
+  }
+
+  // keyword bars
+  var bars = document.querySelectorAll('.kw .bar i');
+  if ('IntersectionObserver' in window) {
+    var bo = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          e.target.style.width = e.target.getAttribute('data-w') + '%';
+          bo.unobserve(e.target);
+        }
+      });
+    }, {threshold:0.4});
+    bars.forEach(function(b){ bo.observe(b); });
+  } else {
+    bars.forEach(function(b){ b.style.width = b.getAttribute('data-w') + '%'; });
+  }
+
+  // current year guard for copyright is static (2026) — no date logic needed
+})();
+</script>
+</body>
+</html>
